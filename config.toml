@@ -1,0 +1,57 @@
+baseURL = "http://www.marco2704.com/"
+
+title = "marco2704"
+
+DefaultContentLanguage = "en"
+
+theme = "hello-friend-ng"
+
+disableRSS = true
+
+publishDir = "docs"
+
+[author]
+  name = "Marco Davalos"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "marco2704's web page"
+  keywords = "homepage, blog, science, informatics, development, programming"
+  images = [""]
+
+  homeSubtitle = "formally known as Marco Davalos"
+
+  contentTypeName = "posts"
+
+  defaultTheme = "light"
+
+  [params.logo]
+      logoText = "cd"
+      logoHomeLink = "/"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:marcodavalosmantilla@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/marco2704"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/marco2704/"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+  [[menu.main]]
+    identifier = "career"
+    name = "Career"
+    url = "/career"
