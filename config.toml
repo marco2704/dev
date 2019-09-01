@@ -4,7 +4,7 @@ title = "marco2704"
 
 DefaultContentLanguage = "en"
 
-theme = "hello-friend-ng"
+theme = "hello-friend-ng-custom"
 
 disableRSS = true
 
