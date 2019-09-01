@@ -50,9 +50,9 @@ publishDir = "docs"
     name = "stackoverflow"
     url  = "https://stackoverflow.com/users/5415951/marco2704?tab=profile"
   
-  [[params.social]]
-    name = "devto"
-    url  = "https://dev.to/marco2704"
+#  [[params.social]]
+#    name = "devto"
+#    url  = "https://dev.to/marco2704"
 
 [menu]
   [[menu.main]]
