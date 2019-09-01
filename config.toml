@@ -46,6 +46,14 @@ publishDir = "docs"
     name = "linkedin"
     url  = "https://www.linkedin.com/in/marco2704/"
 
+  [[params.social]]
+    name = "stackoverflow"
+    url  = "https://stackoverflow.com/users/5415951/marco2704?tab=profile"
+  
+  [[params.social]]
+    name = "devto"
+    url  = "https://dev.to/marco2704"
+
 [menu]
   [[menu.main]]
     identifier = "about"
