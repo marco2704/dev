@@ -8,7 +8,7 @@ theme = "hello-friend-ng-custom"
 
 disableRSS = true
 
-publishDir = "docs"
+publishDir = "public"
 
 [author]
   name = "Marco Davalos"
