@@ -20,11 +20,11 @@ publishDir = "public"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
   # Metadata mostly used in document's head
-  description = "marco2704's web page"
+  description = "marco2704's website"
   keywords = "homepage, blog, science, informatics, development, programming"
   images = [""]
 
-  homeSubtitle = "formally known as Marco Davalos"
+  homeSubtitle = "also known as Marco Davalos"
 
   contentTypeName = "posts"
 
