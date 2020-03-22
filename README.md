@@ -1,2 +1,2 @@
 # website
-marco2704's website hosted by Github Pages.
+marco2704's website.
