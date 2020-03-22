@@ -58,17 +58,6 @@
         transform: translateY(-50%);
         background-color: $pinkColor;
       }
-
-      // &:after {
-      //   content: "";
-      //   width: 5px;
-      //   height: calc(100% - 8px);
-      //   position: absolute;
-      //   top: 50%;
-      //   left: 0px;
-      //   transform: translateY(-50%) rotate(90deg);
-      //   background-color: $pinkColor;
-      // }
     }
   }
 

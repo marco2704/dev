@@ -3,19 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.marco2704.com/career/</loc>
-    <lastmod>2019-07-13T22:49:19+02:00</lastmod>
+    <loc>http://www.marco2704.com/about/</loc>
+    <lastmod>2019-07-13T22:05:28+02:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.marco2704.com/</loc>
-    <lastmod>2019-07-13T22:49:19+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.marco2704.com/about/</loc>
     <lastmod>2019-07-13T22:05:28+02:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>

@@ -5,25 +5,13 @@
     <link>http://www.marco2704.com/</link>
     <description>Recent content on marco2704</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Jul 2019 22:49:19 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jul 2019 22:05:28 +0200</lastBuildDate>
     
 	<atom:link href="http://www.marco2704.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Career</title>
-      <link>http://www.marco2704.com/career/</link>
-      <pubDate>Sat, 13 Jul 2019 22:49:19 +0200</pubDate>
-      
-      <guid>http://www.marco2704.com/career/</guid>
-      <description>DevOps Engineer · dareCode · 2018 - Present As member of the adidas’ Platform Engineering Support Team in the CI/CD area:
- Maintaining different tools for the whole adidas&amp;rsquo; developer community like Jenkins, JFrog Artifactory, SonarQube, Bitbucket, Jira and Confluence, most of them using Docker, Docker Compose, Kubernetes to run them on Linux machines.
- Supporting the teams to create, improve or fix their integrations.
- Developing automation tools for time-consuming tasks as well as scripts for maintaining tasks using Go, Groovy, Python and Bash Script.</description>
-    </item>
-    
-    <item>
-      <title>Marco Davalos</title>
+      <title>About</title>
       <link>http://www.marco2704.com/about/</link>
       <pubDate>Sat, 13 Jul 2019 22:05:28 +0200</pubDate>
       
