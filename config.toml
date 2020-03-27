@@ -54,6 +54,14 @@ publishDir = "public"
     name = "devto"
     url  = "https://dev.to/marco2704"
 
+  [[params.social]]
+    name = "cv"
+    url  = "https://marco2704.com/"
+
+  [[params.social]]
+    name = "instagram"
+    url  = "https://marco2704.com/"
+
 [menu]
   [[menu.main]]
     identifier = "about"
