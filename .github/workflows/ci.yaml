@@ -22,6 +22,7 @@ jobs:
   deploy:
     name: Deploy to Firebase Hosting
     runs-on: ubuntu-18.04
+    needs: build
     steps:
       - name: Setup Firebase CLI tool
-        run: bash -c 'curl -sL https://firebase.tools | bash'
+        run: bash -c 'curl -sL https://firebase.tools'
