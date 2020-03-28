@@ -15,5 +15,13 @@ jobs:
         with:
           hugo-version: '0.68.1'
           extended: true
+
       - name: Build
         run: hugo
+
+  deploy:
+    name: Deploy to Firebase Hosting
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Setup Firebase CLI tool
+        run: curl -sL https://firebase.tools | bash
