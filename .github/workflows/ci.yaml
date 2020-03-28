@@ -24,4 +24,4 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Setup Firebase CLI tool
-        run: curl -sL https://firebase.tools | bash
+        run: bash -c 'curl -sL https://firebase.tools | bash'
