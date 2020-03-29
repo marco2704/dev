@@ -18,18 +18,24 @@ jobs:
       - name: Build Hugo Command
         run: hugo
 
-      - name: Build Hugo
+      - name: Save public Directory
+        if: github.ref == 'refs/heads/master'
         uses: actions/upload-artifact@v1
         with:
-          name: public-folder
+          name: public-dir
           path: public/
 
   deploy:
-    name: Deploy website on Firebase Hosting
-    runs-on: ubuntu-18.04
-    needs: build
     if: github.ref == 'refs/heads/master'
+    name: Deploy website on Firebase Hosting
+    needs: build
+    runs-on: ubuntu-18.04
     steps:
+      - name: Download public Directory
+        uses: actions/download-artifact@v1
+        with:
+          name: public-dir
+
       - name: Setup node
         uses: actions/setup-node@v1
         with:
