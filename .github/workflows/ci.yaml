@@ -12,8 +12,8 @@ jobs:
 
       - name: Setup Hugo
         run: |
-         sudo apt-get update
-         sudo apt-get install -y hugo
+          curl -L "https://github.com/gohugoio/hugo/releases/download/v0.68.3/hugo_extended_0.68.3_Linux-64bit.deb" > hugo_extended.deb
+          sudo dpkg -i hugo_extended.deb
 
       - name: Build Hugo Command
         run: hugo
