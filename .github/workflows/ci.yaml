@@ -1,0 +1,48 @@
+name: cicd
+
+on: push
+
+jobs:
+  build:
+    name: Build website with Hugo
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Setup Hugo
+        run: |
+          curl -L "https://github.com/gohugoio/hugo/releases/download/v0.68.3/hugo_extended_0.68.3_Linux-64bit.deb" > hugo_extended.deb
+          sudo dpkg -i hugo_extended.deb
+
+      - name: Build Hugo Command
+        run: hugo
+
+      - name: Save public Directory
+        if: github.ref == 'refs/heads/master'
+        uses: actions/upload-artifact@v1
+        with:
+          name: public-dir
+          path: public/
+
+  deploy:
+    if: github.ref == 'refs/heads/master'
+    name: Deploy website on Firebase Hosting
+    needs: build
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Download public Directory
+        uses: actions/download-artifact@v1
+        with:
+          name: public-dir
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+
+      - name: Setup Firebase CLI tool
+        run: npm install -g firebase-tools
+
+      - name: Deploy Firebase Command
+        run: firebase deploy --project marco2704 --token "$FIREBASE_TOKEN"
