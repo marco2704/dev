@@ -22,8 +22,8 @@ jobs:
         if: github.ref == 'refs/heads/master'
         uses: actions/upload-artifact@v1
         with:
-          name: public-dir
-          path: public/
+          name: workdir
+          path: ./
 
   deploy:
     if: github.ref == 'refs/heads/master'
@@ -34,7 +34,7 @@ jobs:
       - name: Download public Directory
         uses: actions/download-artifact@v1
         with:
-          name: public-dir
+          name: workdir
 
       - name: Setup node
         uses: actions/setup-node@v1
