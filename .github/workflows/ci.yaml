@@ -25,4 +25,4 @@ jobs:
     needs: build
     steps:
       - name: Setup Firebase CLI tool
-        run: bash -c 'curl -sL https://firebase.tools'
+        run: bash <(curl -sL https://firebase.tools)
