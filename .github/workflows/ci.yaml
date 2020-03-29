@@ -4,7 +4,7 @@ on: push
 
 jobs:
   build:
-    name: Build Hugo website
+    name: Build website with Hugo
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout Repo
