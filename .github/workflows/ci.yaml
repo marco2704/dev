@@ -18,10 +18,17 @@ jobs:
       - name: Build Hugo Command
         run: hugo
 
+      - name: Build Hugo
+        uses: actions/upload-artifact@v1
+        with:
+          name: public-folder
+          path: public/
+
   deploy:
     name: Deploy website on Firebase Hosting
     runs-on: ubuntu-18.04
     needs: build
+    if: github.ref == 'refs/heads/master'
     steps:
       - name: Setup node
         uses: actions/setup-node@v1
@@ -32,4 +39,4 @@ jobs:
         run: npm install -g firebase-tools
 
       - name: Deploy Firebase Command
-        run: firebase -h
+        run: firebase deploy --project marco2704 --token "$FIREBASE_TOKEN"
