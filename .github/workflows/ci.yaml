@@ -1,0 +1,25 @@
+name: cd
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+
+      - name: Setup Firebase CLI tool
+        run: npm install -g firebase-tools
+
+      - name: Deploy website to Firebase Hosting
+        run: firebase deploy --project marco2704 --token "${{ secrets.FIREBASE_TOKEN }}"
